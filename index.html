@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Spotify Playlist Generator</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f2f2f2;
+      color: #333;
+    }
+
+    h1 {
+      text-align: center;
+    }
+
+    form {
+      max-width: 500px;
+      margin: 0 auto;
+      padding: 20px;
+      background-color: #fff;
+      border-radius: 5px;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 5px;
+    }
+
+    input[type="text"],
+    input[type="number"] {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    input[type="submit"] {
+      width: 100%;
+      padding: 10px;
+      background-color: #1db954;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>Spotify Playlist Generator</h1>
+
+  <form method="POST">
+    <label for="genre">Genre:</label>
+    <input type="text" id="genre" name="genre"><br>
+
+    <label for="artist">Artist:</label>
+    <input type="text" id="artist" name="artist"><br>
+
+    <label for="num">Number of tracks:</label>
+    <input type="number" id="num" name="num"><br>
+
+    <label for="playlist_name">Playlist Name:</label>
+    <input type="text" id="playlist_name" name="playlist_name"><br>
+
+    <input type="submit" value="Generate Playlist">
+  </form>
+
+</body>
+</html>
